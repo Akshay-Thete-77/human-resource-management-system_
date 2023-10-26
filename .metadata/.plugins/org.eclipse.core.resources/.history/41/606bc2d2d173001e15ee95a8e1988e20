@@ -1,0 +1,14 @@
+package com.te.hrms.entity;
+
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.FetchType;
+import javax.persistence.ManyToMany;
+
+public class AppUser {
+	private String username;
+	private String password;
+	@ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Roles> roles;
+}

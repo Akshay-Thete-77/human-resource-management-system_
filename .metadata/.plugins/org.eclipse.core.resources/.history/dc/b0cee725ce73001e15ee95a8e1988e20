@@ -1,0 +1,5 @@
+package com.te.hrms.entity;
+
+public class AppUser {
+
+}

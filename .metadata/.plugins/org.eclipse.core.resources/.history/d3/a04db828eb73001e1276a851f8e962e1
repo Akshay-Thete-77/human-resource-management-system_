@@ -1,0 +1,11 @@
+package com.te.hrms.service;
+
+import java.util.List;
+
+import com.te.hrms.entity.PerformanceReview;
+
+public interface PerformanceReviewsService {
+
+	List<PerformanceReview> getPerformanceReviews();
+
+}

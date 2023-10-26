@@ -1,0 +1,26 @@
+package com.te.hrms.controller;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.te.hrms.entity.PerformanceReview;
+import com.te.hrms.response.SuccessResponse;
+import com.te.hrms.service.PerformanceReviewsService;
+
+import lombok.RequiredArgsConstructor;
+
+@RestController
+@RequestMapping("/api/reviews")
+@RequiredArgsConstructor
+public class PerformanceReviewController {
+	private final PerformanceReviewsService performanceReviewsService;
+
+	public ResponseEntity<SuccessResponse> getPerformanceReviews() {
+		List<PerformanceReview> PerformanceReviews = performanceReviewsService.getPerformanceReviews();
+		return null;
+	}
+}

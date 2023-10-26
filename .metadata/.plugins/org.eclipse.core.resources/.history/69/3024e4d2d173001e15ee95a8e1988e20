@@ -1,0 +1,9 @@
+package com.te.hrms.response;
+
+import java.time.LocalDateTime;
+
+public class SuccessResponse {
+	private Object data;
+	private String message;
+	private LocalDateTime timestamp;
+}

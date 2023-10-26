@@ -1,0 +1,5 @@
+package com.te.hrms.service;
+
+public class SkillServiceImpl implements SkillService {
+
+}

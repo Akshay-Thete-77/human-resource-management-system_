@@ -1,0 +1,5 @@
+package com.te.hrms.service.configuration;
+
+public class SecurityConfiguration {
+
+}

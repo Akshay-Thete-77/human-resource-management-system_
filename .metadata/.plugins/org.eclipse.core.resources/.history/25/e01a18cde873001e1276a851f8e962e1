@@ -1,0 +1,11 @@
+package com.te.hrms.service;
+
+import java.util.Optional;
+
+import com.te.hrms.dto.EmployeeDTO;
+
+public interface EmployeeService {
+
+	Optional<String> registerEmployee(EmployeeDTO employeeDTO);
+
+}
